@@ -5,72 +5,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Little by Little Fitness</title>
 </head>
 
 <body>
-    <div class="topnav">
-        <a href="home" class="active">Home</a>
-        <a href="contact">Contact</a>
-        <a href="about">About</a>
-        <a href="login" class="split">Log in</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-    <div class="video">
-        <iframe width="1128" height="700" src="https://www.youtube.com/embed/REftL-w1RXI" title="October 19, 2022"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-    </div>
     <div class="main">
-        <h1>A little bit about me</h1>
-        <p>​I am a certified ACE personal trainer and continuing my education in nutrition and performance
-            enhancement.
-
-            I am married with two CRAZY boys and one behemoth sized dog. I am an animal lover is an understatement.
-            I haven’t had the story book beginnings into heath and fitness.
-            I was never an athlete or into fitness until much later in my life. I was the nerdy shy wallflower.
-            Admittedly, I have had my own struggles. I have spent years validating myself worth through
-            others approval never feeling good enough no matter what efforts I made.
-            I have been broken down, isolated, and made to feel less than. I had completely lost who I was.
-            I felt stuck and afraid of change, of the unknown. It wasn't until I took time out to take care of ME when
-            things started to change. I slowly began finding my strength and
-            self-worth through
-            fitness.
-            Through my own personal passage, I have found my passion in helping others.
-            I love working with individuals who are ready to tap into their potential. I am a safe space for those who
-            have
-            lost their way and individuals who are ready for a change.
-            No matter if your goal is weight loss, muscle gain, balance or more education. I’m ready to help you achieve
-            some <strong> RESULTS all while keeping you motivated and having a good laugh!</strong></p>
-        <div class="card" style="width: 18rem;">
-            <img src="{{ url_for('static', filename='show.jpg') }}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">In Person Training</h5>
-                <p class="card-text">Needing that in-person accountability? My personal training is a dedicated hour for 1-on1 training and ass kicking. Let me help you tap into your full potential.</p>
-            </div>
-            <div class="card-body">
-                <a href="#" class="card-link">More info</a>
-            </div>
+        <div class="topnav">
+            <a href="home" class="active">Home</a>
+            <a href="contact">Contact</a>
+            <a href="about">About</a>
+            <a href="login" class="split">Log in</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="{{ url_for('static', filename='cooking.JPG') }}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Online Coaching</h5>
-                <p class="card-text">Too busy to take care of yourself?  No such thing. Custom workout programming and nutritional support. Weekly Accountability & 24/7 access to me!</p>
+        <br>
+        <div class="header">
+            <h1>Little by Little Fitness</h1>
+        </div>
+        <br>
+        <div class="video">
+            <iframe width="1128" height="700" src="https://www.youtube.com/embed/REftL-w1RXI" title="October 19, 2022"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <br>
+        <div class="about-head">
+            <h1>A little bit about me</h1>
+        </div>
+        <br>
+        <div class="about-body">
+            <p>​I am a certified ACE personal trainer and continuing my education in nutrition and performance
+                enhancement.
+
+                I am married with two CRAZY boys and one behemoth sized dog. I am an animal lover is an understatement.
+                I haven’t had the story book beginnings into heath and fitness.
+                I was never an athlete or into fitness until much later in my life. I was the nerdy shy wallflower.
+                Admittedly, I have had my own struggles. I have spent years validating myself worth through
+                others approval never feeling good enough no matter what efforts I made.
+                I have been broken down, isolated, and made to feel less than. I had completely lost who I was.
+                I felt stuck and afraid of change, of the unknown. It wasn't until I took time out to take care of ME
+                when
+                things started to change. I slowly began finding my strength and
+                self-worth through
+                fitness.
+                Through my own personal passage, I have found my passion in helping others.
+                I love working with individuals who are ready to tap into their potential. I am a safe space for those
+                who
+                have
+                lost their way and individuals who are ready for a change.
+                No matter if your goal is weight loss, muscle gain, balance or more education. I’m ready to help you
+                achieve
+                some <strong> RESULTS all while keeping you motivated and having a good laugh!</strong></p>
+            <br>
+        </div>
+        <div class="flex-container">
+            <div class="flex-child" style="width: 18rem;">
+                <img src="{{ url_for('static', filename='show.jpg') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">In Person Training</h5>
+                    <p class="card-text">Needing that in-person accountability? My personal training is a dedicated hour
+                        for 1 on 1 training and ass kicking. Let me help you tap into your full potential.</p>
+                    <a href="inperson" class="card-link">More info</a>
+                </div>
+                <div class="card-body">
+
+                </div>
             </div>
-            <div class="card-body">
-                <a href="#" class="card-link">More info</a>
+            <div class="flex-child" style="width: 18rem;">
+                <img src="{{ url_for('static', filename='cooking.JPG') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Online Coaching</h5>
+                    <p class="card-text">Too busy to take care of yourself? No such thing. Custom workout programming
+                        and nutritional support. Weekly Accountability & 24/7 access to me!</p>
+                    <a href="online" class="card-link">More info</a>
+                </div>
+                <div class="card-body">
+
+                </div>
             </div>
         </div>
     </div>
     <footer>
-        <img src="{{ url_for('static', filename='logo1.jpg') }}">
+        <div class="foot">
+            <img src="{{ url_for('static', filename='logo1.jpg') }}">
+        </div>
     </footer>
 </body>
 

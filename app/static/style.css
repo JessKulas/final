@@ -1,0 +1,78 @@
+.topnav {
+  background-color: rgb(155, 161, 162);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(97, 78, 110);
+  color: black;
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav a.split {
+  float: right;
+  background-color: #22c3dff2;
+  color: white;
+}
+  
+
+.main {
+    background-color: rgb(223, 230, 235);
+}
+
+.header {
+  font-family: 'Hurricane', cursive;
+  font-size: 200%;
+  margin-left: 100px;
+}
+
+.video {
+  display: flex;
+  margin-left: 350px;
+}
+
+.about-head {
+  font-family: 'Hurricane', cursive;
+  margin-left: 100px;
+}
+
+.about-body {
+  margin-left: 175px;
+  margin-right: 175px;
+}
+
+
+.flex-container {
+  display: flex;
+  margin: auto;
+  max-width: 600px;
+
+}
+
+.flex-child {
+  flex: 1;
+  border: 2px solid rgb(223, 230, 235);
+}  
+
+.flex-child:first-child {
+  margin-right: 20px;
+} 
+
+
+
+
+.foot {
+  display: flex;
+  margin-left: 400px;
+}

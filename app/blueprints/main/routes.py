@@ -2,7 +2,7 @@ from contextlib import redirect_stderr
 from app import app
 from flask import render_template
 
-@app.route('/')
+@app.route('/home')
 def home ():
     return render_template('home.html')
 
@@ -14,9 +14,13 @@ def about():
 def contact():
     return render_template('contact.html')
 
-@app.route('/services')
-def services():
-    return render_template('services.html')
+@app.route('/online')
+def online():
+    return render_template('online.html')
+
+@app.route('/inperson')
+def inperson():
+    return render_template('inperson.html')
 
 @app.route('/login')
 def login():
