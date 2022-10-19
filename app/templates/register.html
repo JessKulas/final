@@ -1,5 +1,5 @@
 <h1>Register</h1>
-<form action="{{ url_for('register') }}" method="POST">
+<form action="{{ url_for('auth.register') }}" method="POST">
     <div class="form-group">
         <label for="inputEmail">Email address</label>
         <input type="email" class="form-control" id="inputEmail" name="inputEmail" aria-describedby="emailHelp">
@@ -20,6 +20,6 @@
         <label for="inputPasswordConfirm">Confirm Password</label>
         <input type="password" class="form-control" id="inputPasswordConfirm" name="inputPasswordConfirm">
     </div>
-    <p><small>Already have an account? <a href="{{ url_for('login') }}">Login here</a></small></p>
+    <p><small>Already have an account? <a href="{{ url_for('auth.login') }}">Login here</a></small></p>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
