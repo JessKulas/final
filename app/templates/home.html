@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,62 +10,68 @@
     <link rel="stylesheet" href="style.css">
     <title>Little by Little Fitness</title>
 </head>
+
 <body>
-    <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">Home</a>
-        <a href="#contact">Contact</a>
+    <div class="topnav">
+        <a href="home" class="active">Home</a>
+        <a href="contact">Contact</a>
         <a href="about">About</a>
+        <a href="login" class="split">Log in</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
     <div class="video">
-        <video width="320" height="240" controls>
-            <source src="/nicole.mov" type="video/mov">
-
-        </video>
+        <iframe width="1128" height="700" src="https://www.youtube.com/embed/REftL-w1RXI" title="October 19, 2022"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
     </div>
+    <div class="main">
+        <h1>A little bit about me</h1>
+        <p>​I am a certified ACE personal trainer and continuing my education in nutrition and performance
+            enhancement.
 
-    <h1>Meet Nicole</h1>
-    <p>​I am a certified ACE personal trainer and continuing my education in nutrition and performance
-        enhancement.
-
-        I am married with two CRAZY boys and one behemoth sized dog. I am an animal lover is an understatement.
-        I haven’t had the story book beginnings into heath and fitness.
-        I was never an athlete or into fitness until much later in my life. I was the nerdy shy wallflower.
-        Admittedly, I have had my own struggles. I have spent years validating myself worth through
-        others approval never feeling good enough no matter what efforts I made.
-        I have been broken down, isolated, and made to feel less than. I had completely lost who I was.
-        I felt stuck and afraid of change, of the unknown. It wasn't until I took time out to take care of ME when
-        things started to change. I slowly began finding my strength and
-        self-worth through
-        fitness.
-        Through my own personal passage, I have found my passion in helping others.
-        I love working with individuals who are ready to tap into their potential. I am a safe space for those who have
-        lost their way and individuals who are ready for a change.
-        No matter if your goal is weight loss, muscle gain, balance or more education. I’m ready to help you achieve
-        some <strong> RESULTS all while keeping you motivated and having a good laugh!</strong></p>
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+            I am married with two CRAZY boys and one behemoth sized dog. I am an animal lover is an understatement.
+            I haven’t had the story book beginnings into heath and fitness.
+            I was never an athlete or into fitness until much later in my life. I was the nerdy shy wallflower.
+            Admittedly, I have had my own struggles. I have spent years validating myself worth through
+            others approval never feeling good enough no matter what efforts I made.
+            I have been broken down, isolated, and made to feel less than. I had completely lost who I was.
+            I felt stuck and afraid of change, of the unknown. It wasn't until I took time out to take care of ME when
+            things started to change. I slowly began finding my strength and
+            self-worth through
+            fitness.
+            Through my own personal passage, I have found my passion in helping others.
+            I love working with individuals who are ready to tap into their potential. I am a safe space for those who
+            have
+            lost their way and individuals who are ready for a change.
+            No matter if your goal is weight loss, muscle gain, balance or more education. I’m ready to help you achieve
+            some <strong> RESULTS all while keeping you motivated and having a good laugh!</strong></p>
+        <div class="card" style="width: 18rem;">
+            <img src="{{ url_for('static', filename='show.jpg') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">In Person Training</h5>
+                <p class="card-text">Needing that in-person accountability? My personal training is a dedicated hour for 1-on1 training and ass kicking. Let me help you tap into your full potential.</p>
+            </div>
+            <div class="card-body">
+                <a href="#" class="card-link">More info</a>
+            </div>
         </div>
-        <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
+        <div class="card" style="width: 18rem;">
+            <img src="{{ url_for('static', filename='cooking.JPG') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Online Coaching</h5>
+                <p class="card-text">Too busy to take care of yourself?  No such thing. Custom workout programming and nutritional support. Weekly Accountability & 24/7 access to me!</p>
+            </div>
+            <div class="card-body">
+                <a href="#" class="card-link">More info</a>
+            </div>
         </div>
     </div>
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-        </div>
-        <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-        </div>
-    </div>
+    <footer>
+        <img src="{{ url_for('static', filename='logo1.jpg') }}">
+    </footer>
 </body>
+
 </html>
