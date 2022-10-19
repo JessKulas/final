@@ -3,7 +3,7 @@ from app.models import User
 from app import db, login_manager
 from flask import render_template, request, redirect, url_for, flash
 from flask_login import login_user, logout_user
-from app.auth.forms import SignupForm, LoginForm 
+from app.blueprints.auth.forms import SignupForm, LoginForm 
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
