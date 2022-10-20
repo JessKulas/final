@@ -1,0 +1,54 @@
+.topnav {
+    background-color: rgb(155, 161, 162);
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: rgb(97, 78, 110);
+    color: black;
+  }
+  
+
+  .topnav a.split {
+    float: right;
+    background-color: #299fb4f2;
+    color: white;
+  }
+    
+  
+  .main {
+      background-color: rgb(223, 230, 235);
+  }
+  
+  .header {
+    font-family: 'Hurricane', cursive;
+    font-size: 200%;
+    
+  }
+
+  .search {
+    margin-left: 375px;
+    width: 70%;
+  }
+
+  .container {
+    margin-left: 400px;
+    text-align: center;
+
+   
+  }
+
+  .foot {
+    display: flex;
+    margin-left: 425px;
+  }
