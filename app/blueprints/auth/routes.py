@@ -1,9 +1,10 @@
+import smtplib
 from . import bp as app
 from app.blueprints.main.models import User 
 from app import db, login_manager
 from flask import render_template, request, redirect, url_for, flash
 from flask_login import login_user, logout_user
-from app.blueprints.auth.forms import SignupForm, LoginForm 
+from app.blueprints.auth.forms import SignupForm, LoginForm, Contact 
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -69,6 +70,25 @@ def register():
         raise Exception(err)
 
     return render_template('register.html')
+
+
+@app.route('/contact', methods=['POST'])
+def contact():
+    fname = request.form.get("fname")
+    lname = request.form.get("lname")
+    phone_number = request.form.get("number") 
+    email = request.form.get("email")
+    subject1 = request.form.get("subject1")
+    subject2 = request.form.get("subject2")
+    subject3 = request.form.get("subject3")
+    personal = request.form.get("personal")
+
+    message = "Thank you, I will be in contact with you shortly"
+    server = smtplib.SMTP("smtp.gmail.com", 587)
+    server.starttls()
+    server.sendmail("jessrevelette@gmail.com", email, message)
+
+
 
 @app.route('/logout')
 def logout():

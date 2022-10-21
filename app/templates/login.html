@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Little by Little Fitness</title>
 </head>
+
 <body>
     <div class="main">
         <div class="topnav">
@@ -25,26 +26,27 @@
                 <i class="fa fa-bars"></i>
             </a>
         </div>
-<h3>Client Login</h3>
-    
-<form action="{{ url_for('auth.login') }}" method="POST">
-    {{ form.hidden_tag() }}
-    <div class="form-group">
-        {{ form.email.label }}
-        {{ form.email(class="form-control", placeholder = "Enter your Email here") }}
+        <h3>Client Login</h3>
+
+        <form action="{{ url_for('auth.login') }}" method="POST">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                {{ form.email.label }}
+                {{ form.email(class="form-control", placeholder = "Enter your Email here") }}
+            </div>
+            <div class="form-group">
+                {{ form.password.label }}
+                {{ form.password(class="form-control", placeholder = "Enter your password here") }}
+            </div>
+            <p><small>Don't have an account? <a href="{{ url_for('auth.register') }}">Register here.</a></small></p>
+            {{ form.submit(class = "btn btn-primary btn-block") }}
+        </form>
     </div>
-    <div class="form-group">
-        {{ form.password.label }}
-        {{ form.password(class="form-control", placeholder = "Enter your password here") }}
-    </div>
-    <p><small>Don't have an account? <a href="{{ url_for('auth.register') }}">Register here.</a></small></p>
-    {{ form.submit(class = "btn btn-primary btn-block") }}
-</form>
-<footer>
-    <div class="foot">
-        <img src="{{ url_for('static', filename='logo1.jpg') }}">
-    </div>
-</footer>
+    <footer>
+        <div class="foot">
+            <img src="{{ url_for('static', filename='logo1.jpg') }}">
+        </div>
+    </footer>
 </body>
 
 </html>
