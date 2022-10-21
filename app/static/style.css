@@ -37,6 +37,10 @@
   margin-left: 100px;
 }
 
+.bline {
+  margin-left: 250px;
+}
+
 .video {
   display: flex;
   margin-left: 350px;

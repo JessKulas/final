@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='training.css') }}">
     <title>Little By Little Fitness</title>
 </head>
 <body>
@@ -17,32 +17,34 @@
         <a href="/" class="active">Home</a>
         <a href="about">About</a>
         <a href="contact">Contact</a>
-        <a href="food">Recipes</a>
-        <a href="login" class="split">Log in</a>
+        <a href="food">Macro Data</a>
+        <a href="/auth/login" class="split">Log in</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
-    <h1>Little by little Services</h1>
-    <p>Online Coaching:  Too busy to take care of yourself?  No such thing. Custom workout programming and nutritional support. Weekly Accountability & 24/7 access to me!
+    <br>
+    <div class="header">
+        <h1>Little by Little Fitness</h1>
+    </div>
+    <div class="bline">
+        <h3>Online Plans</h3>
+        <br>
+    </div>
+    <div class="bodya">
+    <p>Too busy to take care of yourself?  No such thing. Custom workout programming and nutritional support. Weekly Accountability & 24/7 access to me!
 
-        Personal Training: Needing that in-person accountability? My personal training is a dedicated hour for 1-on1 training and ass kicking. Let me help you tap into your full potential. 
-        
-        Pricing: Online Plans
-        
-        Full Access: $175 every month 
-        Workouts custom-designed for your goals and equipment and nutrition protocols based on your goals! Weekly Check-Ins 
-        
-        Workout Coaching: $75 every month
-        Custom workout programming & app access
-        
-
-        
-        Looking to workout from comfort of your own home?  No problem! I got you covered.
-        
-        1/Week $300 every month   1 on 1 in home coaching once a week, $75/session
-        2/Week  $520 every month  1 on 1 in home coaching  twice a week $65/session
-        3/Week  $720 every month 1 on 1 in home coaching three times a week $60/session
-        4/week $880 every month 1 on 1 in home coaching four times a week $55/session.</p>
+        <p>Full Access: $175 every month</p>
+        <p>Workouts custom-designed for your goals and equipment and nutrition protocols based on your goals! Weekly
+            Check-Ins</p>
+        <p>Workout Coaching: $75 every month</p>
+        <p>Custom workout programming & app access</p>
+</div>
+<footer>
+    <div class="foot">
+        <img src="{{ url_for('static', filename='logo1.jpg') }}">
+    </div>
+</footer>
 </body>
+
 </html>

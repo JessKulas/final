@@ -36,6 +36,10 @@
     font-size: 200%;
     margin-left: 100px;
   }
+
+  .chat {
+    margin-left: 250px;
+  }
   /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */

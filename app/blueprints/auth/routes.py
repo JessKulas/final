@@ -1,5 +1,5 @@
 from . import bp as app
-from app.models import User 
+from app.blueprints.main.models import User 
 from app import db, login_manager
 from flask import render_template, request, redirect, url_for, flash
 from flask_login import login_user, logout_user
@@ -30,11 +30,11 @@ def login():
                 else:
                     flash('Log in successful', 'success')
                     login_user(user)
-                    return redirect(url_for('main.home'))
-        except:
-            raise Exception('Invalid form data.')
+                    return redirect(url_for('home'))
+        except Exception as err:
+            raise Exception(err)
 
-    return render_template('login.html')
+    return render_template('login.html' , form = form)
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
@@ -65,8 +65,8 @@ def register():
             db.session.commit()
             flash('User registered successfully', 'success')
             return redirect(url_for('auth.login'))
-    except:
-        raise Exception('Invalid form data.')
+    except Exception as err:
+        raise Exception(err)
 
     return render_template('register.html')
 

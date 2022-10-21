@@ -18,10 +18,10 @@
     <div class="main">
         <div class="topnav">
             <a href="home" class="active">Home</a>
-            <a href="about">About</a>
+            <a href="#sectionA">About</a>
             <a href="contact">Contact</a>
-            <a href="food">Recipes</a>
-            <a href="login" class="split">Log in</a>
+            <a href="food">Macro Data</a>
+            <a href="/auth/login" class="split">Log in</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
@@ -29,6 +29,10 @@
         <br>
         <div class="header">
             <h1>Little by Little Fitness</h1>
+        </div>
+        <div class="bline">
+            <p><strong>I'm here because I believe in you and I'm going to help you be the best version of yourself that
+                    you can be</strong></p>
         </div>
         <br>
         <div class="video">
@@ -38,34 +42,63 @@
                 allowfullscreen></iframe>
         </div>
         <br>
-        <div class="about-head">
+        <div class="about-head" id="sectionA">
             <h1>A little bit about me</h1>
         </div>
         <br>
         <div class="about-body">
-            <p>​I am a certified ACE personal trainer and continuing my education in nutrition and performance
-                enhancement.
+            <a name="sectionsA">
+                <div class="card mb-3" style="max-width: 1300px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="{{ url_for('static', filename='hulahoop.JPG') }}" alt="..." width="425"
+                                height="600">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p class="card-text">​I am a certified ACE personal trainer and continuing my education
+                                    in nutrition and performance
+                                    enhancement.
 
-                I am married with two CRAZY boys and one behemoth sized dog. I am an animal lover is an understatement.
-                I haven’t had the story book beginnings into heath and fitness.
-                I was never an athlete or into fitness until much later in my life. I was the nerdy shy wallflower.
-                Admittedly, I have had my own struggles. I have spent years validating myself worth through
-                others approval never feeling good enough no matter what efforts I made.
-                I have been broken down, isolated, and made to feel less than. I had completely lost who I was.
-                I felt stuck and afraid of change, of the unknown. It wasn't until I took time out to take care of ME
-                when
-                things started to change. I slowly began finding my strength and
-                self-worth through
-                fitness.
-                Through my own personal passage, I have found my passion in helping others.
-                I love working with individuals who are ready to tap into their potential. I am a safe space for those
-                who
-                have
-                lost their way and individuals who are ready for a change.
-                No matter if your goal is weight loss, muscle gain, balance or more education. I’m ready to help you
-                achieve
-                some <strong> RESULTS all while keeping you motivated and having a good laugh!</strong></p>
-            <br>
+                                    I am married with two CRAZY boys and one behemoth sized dog. I am an animal lover is
+                                    an
+                                    understatement.
+                                    I haven’t had the story book beginnings into heath and fitness.
+                                    I was never an athlete or into fitness until much later in my life. I was the nerdy
+                                    shy wallflower.
+                                    Admittedly, I have had my own struggles. I have spent years validating myself worth
+                                    through
+                                    others approval never feeling good enough no matter what efforts I made.
+                                    I have been broken down, isolated, and made to feel less than. I had completely lost
+                                    who I was.
+                                    I felt stuck and afraid of change, of the unknown. It wasn't until I took time out
+                                    to take care of
+                                    ME
+                                    when
+                                    things started to change. I slowly began finding my strength and
+                                    self-worth through
+                                    fitness.
+                                    Through my own personal passage, I have found my passion in helping others.
+                                    I love working with individuals who are ready to tap into their potential. I am a
+                                    safe space for
+                                    those
+                                    who
+                                    have
+                                    lost their way and individuals who are ready for a change.
+                                    No matter if your goal is weight loss, muscle gain, balance or more education. I’m
+                                    ready to help you
+                                    achieve
+                                    some <strong> RESULTS all while keeping you motivated and having a good
+                                        laugh!</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </a>
+        </div>
+        <div class="header">
+            <h1>Little by Little Services</h1>
         </div>
         <div class="flex-container">
             <div class="flex-child" style="width: 18rem;">

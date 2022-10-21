@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,33 +10,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='training.css') }}">
     <title>Little By Little Fitness</title>
 </head>
+
 <body>
-    <div class="topnav">
-        <a href="/" class="active">Home</a>
-        <a href="about">About</a>
-        <a href="contact">Contact</a>
-        <a href="food">Recipes</a>
-        <a href="login" class="split">Log in</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+    <div class="main">
+        <div class="topnav">
+            <a href="/" class="active">Home</a>
+            <a href="#sectionA">About</a>
+            <a href="contact">Contact</a>
+            <a href="food">Macro Data</a>
+            <a href="/auth/login" class="split">Log in</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <br>
+        <div class="header">
+            <h1>Little by Little Fitness</h1>
+        </div>
+        <div class="bline">
+            <h3>In Person Plans</h3>
+        </div>
+        <br>
+        <div class="bodya">
+            <p>Needing that in-person accountability? My personal training is a dedicated hour for 1 on 1 training and
+                ass
+                kicking. Let me help you tap into your full potential.</p>
+            <p>Full Access: $175 every month</p>
+            <p>Workouts custom-designed for your goals and equipment and nutrition protocols based on your goals! Weekly
+                Check-Ins</p>
+            <p>1/Week $200 every month 1 on 1 coaching once a week, $50/session</p>
+            <p>2/Week $280 every month 1 on 1 coaching twice a week $35/session</p>
+            <p>3/Week $360 every month 1 on 1 coaching three times a week $30/session</p>
+            <p> 4/week $400 every month 1 on 1 coaching four times a week $25/session</p>
+        </div>
+        <br>
+        <div class="cline">
+            <h3>Looking to workout from comfort of your own home? No problem! I got you covered.</h3>
+            <br>
+        </div>
+        <div class="bodyb">
+            <p> 1/Week $300 every month 1 on 1 in home coaching once a week, $75/session</p>
+            <p> 2/Week $520 every month 1 on 1 in home coaching twice a week, $65/session</p>
+            <p> 3/Week $720 every month 1 on 1 in home coaching three times a week, $60/session</p>
+            <p> 4/week $880 every month 1 on 1 in home coaching four times a week, $55/session</p>
+            <br>
+        </div>
     </div>
-    <h1>Little by Little fitness</h1>
-    <h2>In Person Plans</h2>
-    <p>
-        1/Week $200 every month   1 on 1 coaching once a week, $50/session
-        2/Week  $280 every month  1 on 1 coaching  twice a week $35/session
-        3/Week  $360 every month 1 on 1 coaching three times a week $30/session
-        4/week $400 every month 1 on 1 coaching four times a week $25/session</p>
-    
-<footer>
-    <div class="foot">
-        <img src="{{ url_for('static', filename='logo1.jpg') }}">
-    </div>
-</footer>
+
+    <footer>
+        <div class="foot">
+            <img src="{{ url_for('static', filename='logo1.jpg') }}">
+        </div>
+    </footer>
 </body>
 
 </html>
